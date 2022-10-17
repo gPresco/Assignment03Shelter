@@ -3,6 +3,8 @@ import java.util.ArrayList;
 
 public class Shelter {
     private PApplet sketch;
+    private ArrayList<Dog> dogs;
+    private int numberOfDogs;
     /* TODO: A Shelter contains (HAS) dogs inside it. Define an array list variable to store the dogs. Should it be public or private? */
 
 
@@ -12,7 +14,9 @@ public class Shelter {
      * @param sketch
      */
     Shelter(PApplet sketch) {
-
+        this.sketch=sketch;
+        dogs = new ArrayList<Dog>();
+        numberOfDogs = 4;
     }
 
 
@@ -22,6 +26,9 @@ public class Shelter {
      * @param dog
      */
     void intake(Dog dog){
+        for(int i = 0; i > numberOfDogs; ++i){
+
+        }
 
     }
 

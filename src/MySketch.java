@@ -23,6 +23,7 @@ public class MySketch extends PApplet {
 
     public void draw() {
         background(BACKGROUND_COLOR);
+        Shelter.displayAnimals();
         /* TODO:  Display all the dogs in the shelter */
         /* Hint: use fantasy driven design. Pretend the shelter class has a method to display its dogs and call it. */
         /* You can worry about the details later when you design the Shelter class */
