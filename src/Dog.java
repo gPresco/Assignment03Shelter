@@ -8,6 +8,9 @@ public class Dog {
     private PImage img;
     private static final int IMG_SCALE_FACTOR = 2;
     private int x,y;
+    private String name;
+    private String breed;
+    private int age;
     /* TODO  Add additional member variables. Choose appropriate access modifiers */
 
 
@@ -16,8 +19,19 @@ public class Dog {
      * @param sketch
      * @param x
      * @param y
+     * @param img
+     * @param name
+     * @param breed
+     * @param age
      */
-    protected Dog(PApplet sketch, int x, int y, .....) {
+    protected Dog(PApplet sketch, int x, int y, PImage img, String name, String breed, int age) {
+        this.sketch = sketch;
+        this.x = x;
+        this.y = y;
+        this.img = img;
+        this.name = name;
+        this.breed = breed;
+        this.age = age;
 
 
     }
