@@ -19,7 +19,10 @@ public class MySketch extends PApplet {
     public void setup() {
         shelter = new Shelter(this);
         img = loadImage("assets/dog1.png");
-        dog = new Dog(this, 50, 50, img, "Lou", "Lab", 10);
+        for(int i = 0; i < 4; ++i){
+            dog = new Dog(this, 20 , img.height, img, dogNames[i], dogBreeds[i], dogAges[i]);
+        }
+        
         /* TODO:  create a shelter object and add all the animals described in the arrays above to it */
         /* Hint: use fantasy driven design. Pretend the shelter class has a method to intake a new dog and call it. */
         /* You can worry about the details later when you design the Shelter class */
