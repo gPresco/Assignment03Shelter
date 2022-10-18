@@ -41,11 +41,10 @@ public class Dog {
      * and an AdoptMe button. Work on displaying each element, one at a time. Test after each addition.
      */
     protected void draw() {
-        sketch.image(img, x, y, img.height, img.width);
+        sketch.image(img, x, y, img.height * IMG_SCALE_FACTOR, img.width *IMG_SCALE_FACTOR);
         sketch.fill(0,0,125);
-        sketch.text(name, x + img.width, y);
-        sketch.text(breed, x + img.width, y);
-        sketch.text(age, x + img.width, y);
+        sketch.text(toString(), x + img.width, y);
+        
 
     }
 
@@ -53,9 +52,10 @@ public class Dog {
     /**
      * TODO:  Your toString method should return a String containing the name, breed, and age of the dog object
      */
-    //public String toString() {
+    public String toString() {
+        return "Name: " + name + " Breed: " + breed + " Age: " + age;
 
-    //}
+    }
 }
 
 

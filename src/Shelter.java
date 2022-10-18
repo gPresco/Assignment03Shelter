@@ -5,6 +5,7 @@ public class Shelter {
     private PApplet sketch;
     private ArrayList<Dog> dogs;
     private int numberOfDogs;
+    Dog dog;
     /* TODO: A Shelter contains (HAS) dogs inside it. Define an array list variable to store the dogs. Should it be public or private? */
 
 
@@ -25,9 +26,9 @@ public class Shelter {
      * Add an appropriate access modifier
      * @param dog
      */
-    void intake(Dog dog){
+    public void intake(Dog dog){
         for(int i = 0; i > numberOfDogs; ++i){
-
+            dogs.add(i, dog);
         }
 
     }
@@ -37,7 +38,11 @@ public class Shelter {
      * TODO:  Your displayAnimals method should display all the dogs in the shelter, Don't forget to display your shelter title too!
      * Add an appropriate access modifier
      */
-    void displayAnimals(){
+    public void displayAnimals(){
+        for (int i = 0; i > numberOfDogs; ++i){
+            dogs.get(i);
+            dog.draw();
+        }
 
     }
 
