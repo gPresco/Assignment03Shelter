@@ -32,7 +32,10 @@ public class MySketch extends PApplet {
     public void draw() {
         background(BACKGROUND_COLOR);
         //shelter.displayAnimals();
+        textSize(12);
         dog.draw();
+        textSize(32);
+        text("Gray's Dog Shelter", 150, 30);
         /* TODO:  Display all the dogs in the shelter */
         /* Hint: use fantasy driven design. Pretend the shelter class has a method to display its dogs and call it. */
         /* You can worry about the details later when you design the Shelter class */

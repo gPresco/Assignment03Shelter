@@ -29,6 +29,7 @@ public class Shelter {
     public void intake(Dog dog){
         for(int i = 0; i > numberOfDogs; ++i){
             dogs.add(i, dog);
+
         }
 
     }
