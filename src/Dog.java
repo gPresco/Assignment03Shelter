@@ -41,9 +41,10 @@ public class Dog {
      * and an AdoptMe button. Work on displaying each element, one at a time. Test after each addition.
      */
     protected void draw() {
-        sketch.image(img, x, y, img.height * IMG_SCALE_FACTOR, img.width *IMG_SCALE_FACTOR);
+        sketch.image(img, x, y, img.width, img.height);
         sketch.fill(0,0,125);
         sketch.text(toString(), x + img.width, y);
+        sketch.text("Adopt Me!", x + img.width, y + 20);
         
 
     }
