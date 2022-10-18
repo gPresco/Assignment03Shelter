@@ -17,7 +17,7 @@ public class Shelter {
     Shelter(PApplet sketch) {
         this.sketch=sketch;
         dogs = new ArrayList<Dog>();
-        numberOfDogs = 4;
+        numberOfDogs = 3;
     }
 
 
@@ -41,7 +41,7 @@ public class Shelter {
      */
     public void displayAnimals(){
         for (int i = 0; i > numberOfDogs; ++i){
-            dogs.get(i);
+            dog = dogs.get(i);
             dog.draw();
         }
 
