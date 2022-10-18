@@ -27,7 +27,7 @@ public class Shelter {
      * @param dog
      */
     public void intake(Dog dog){
-        for(int i = 0; i > numberOfDogs; ++i){
+        for(int i = 0; i < numberOfDogs; ++i){
             dogs.add(i, dog);
 
         }
@@ -40,7 +40,7 @@ public class Shelter {
      * Add an appropriate access modifier
      */
     public void displayAnimals(){
-        for (int i = 0; i > numberOfDogs; ++i){
+        for (int i = 0; i < numberOfDogs; ++i){
             dog = dogs.get(i);
             dog.draw();
         }

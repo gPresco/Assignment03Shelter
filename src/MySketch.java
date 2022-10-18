@@ -21,7 +21,7 @@ public class MySketch extends PApplet {
         
         for(int i = 0; i < 4; ++i){
             img = loadImage(dogImages[i]);
-            dog = new Dog(this, 20, 50, img, dogNames[i], dogBreeds[i], dogAges[i]);
+            dog = new Dog(this, 20, 50 * i, img, dogNames[i], dogBreeds[i], dogAges[i]);
             shelter.intake(dog);
         }
         
@@ -38,7 +38,6 @@ public class MySketch extends PApplet {
         background(BACKGROUND_COLOR);
         textSize(12);
         shelter.displayAnimals();
-        //dog.draw();
         textSize(32);
         text("Gray's Dog Shelter", 150, 30);
         /* TODO:  Display all the dogs in the shelter */
